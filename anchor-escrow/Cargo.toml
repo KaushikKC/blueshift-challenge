@@ -1,0 +1,10 @@
+[workspace]
+members = ["programs/blueshift-anchor-escrow"]
+resolver = "2"
+
+[workspace.dependencies]
+constant_time_eq = "=0.3.0"
+blake3 = "=1.5.4"
+
+[profile.release]
+overflow-checks = true
